@@ -1,0 +1,48 @@
+[all:vars]
+#gateway=['192.168.1.1','192.168.2.1','192.168.3.1']
+gateway=['','','']
+# now support diff interface?
+interface={'pri_dev':'p2p1', 'manage_dev': 'em1', 'pub_dev': 'p2p1'}
+# username default root see groups/all/vars
+vault_machine_pass='12345'
+
+
+## for master 
+# note: cannot comment follow the var. such as 
+# web_ip=192.168.4.10 from f
+web_ip=192.168.4.10
+web_ip_mask=16
+ntpips=['cn.ntp.org.cn']
+
+[control]
+control_machine ansible_host=127.0.0.1 ansible_connection=local manage_ip="172.18.123.49"
+
+[cluster_servers]
+# for production deploy, alway have three interfaces, and maybe only two ip need config.
+#ans1.tc.com ips=['192.168.1.15/24','192.168.2.15/24','192.168.3.15/24'] manage_ip="192.168.2.15" 
+# sambe order as interfaces={'pri_dev':'eth1', 'manage_dev': 'eth2', 'pub_dev': 'eth3'}
+# when config, we can exclude the manage_dev ipconfig,but how
+
+#ans2.tc.com ips=['192.168.1.16/24','192.168.2.16/24','192.168.3.16/24'] manage_ip="192.168.2.16" 
+#ans3.tc.com ips=['192.168.1.17/24','192.168.2.17/24','192.168.3.17/24'] manage_ip="192.168.2.17" 
+ipfs112.tc.com ips=['10.10.10.64/24','172.16.10.64/24','172.18.10.64/24'] manage_ip="172.16.10.64"
+ipfs111.tc.com ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage_ip="172.16.10.18"
+#ipfs110.tc.com ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage_ip="172.16.10.18"
+
+[cluster_clients]
+#ans4.tc.com should_mount_from=ans1.tc.com ips=['192.168.1.18/16','192.168.2.18/16','192.168.3.18/16'] manage_ip="192.168.2.18" 
+ipfs112.tc.com
+ipfs111.tc.com
+#ipfs110.tc.com
+
+
+[cluster_machines:children]
+cluster_servers
+cluster_clients
+
+[master]
+# master can any node, not need to be on storage node 
+#ans1.tc.com
+
+[slaves:children]
+cluster_servers
