@@ -14,6 +14,10 @@ web_ip=192.168.4.10
 web_ip_mask=16
 ntpips=['cn.ntp.org.cn']
 
+node0=ipfs112.tc.com
+benchmarking_tools=1
+tool="smallfile"
+download_results_at_location=/root/
 [control]
 control_machine ansible_host=127.0.0.1 ansible_connection=local manage_ip="172.18.123.49"
 
@@ -31,8 +35,8 @@ ipfs111.tc.com ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage
 
 [cluster_clients]
 #ans4.tc.com should_mount_from=ans1.tc.com ips=['192.168.1.18/16','192.168.2.18/16','192.168.3.18/16'] manage_ip="192.168.2.18" 
-ipfs112.tc.com
-ipfs111.tc.com
+ipfs112.tc.com should_mount_from=ipfs112.tc.com
+ipfs111.tc.com should_mount_from=ipfs111.tc.com
 #ipfs110.tc.com
 
 
@@ -42,7 +46,7 @@ cluster_clients
 
 [master]
 # master can any node, not need to be on storage node 
-#ans1.tc.com
+ipfs112.tc.com
 
 [slaves:children]
 cluster_servers
