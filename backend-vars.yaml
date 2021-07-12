@@ -1,0 +1,135 @@
+---
+# see all config var for the infro roles 
+# ref https://github.com/gluster/gluster-ansible-infra/blob/cccc202d807b146cf284aef859a7e73ea731076c/README.md
+
+
+# infra default from roles default, when need change ,change here!
+#   #Defaults for firewall setup
+#   gluster_infra_fw_permanent: true
+#   gluster_infra_fw_state: enabled
+#   gluster_infra_fw_zone: public
+#   
+#   # Defaults for backend setup
+#    gluster_infra_disktype: JBOD
+#    gluster_infra_vdo_state: present
+#    gluster_infra_lv_cachelvname: glusterfs_ssd_cache
+#   # # GlusterFS recommends 16G, if it has to be overridden set
+#   # # this variable in playbooks
+
+
+
+# for vm deploy:
+# for production deply
+
+
+# gluster_infra_vdo: Mandatory argument if vdo has to be setup
+# we alway not use vdo .
+#
+# Set a disk type, Options: JBOD, RAID6, RAID10
+gluster_infra_disktype: JBOD
+
+# gluster_infra_dalign
+# # Dataalignment, for JBOD default is 256K if not provided.
+# # For RAID{6,10} dataalignment is computed by multiplying
+# # gluster_infra_diskcount and gluster_infra_stripe_unit_size.
+#
+# gluster_infra_dalign: 256K
+#
+#
+
+# RAID6 and RAID10 diskcount (Needed only when disktype is raid)
+gluster_infra_diskcount: 10
+
+# gluster_infra_stripe_unit_size
+# # Required only in case of RAID6 and RAID10. Stripe unit size always in KiB, do
+# # not provide the trailing `K' in the value.
+# Stripe unit size always in KiB
+gluster_infra_stripe_unit_size: 128
+
+# Variables for creating volume group
+gluster_infra_volume_groups:
+  - { vgname: 'GLUSTER_vg1', pvname: '/dev/sdb' }
+#  - { vgname: 'GLUSTER_vg2', pvname: '/dev/sdc' }
+#  - { vgname: 'GLUSTER_vg3', pvname: '/dev/sdd' }
+
+# Metadata size for LV, recommended value 16G is used by default. That value can be overridden by setting the variable. Include the unit [G|M|K] 
+# gluster_infra_lv_poolmetadatasize: 16G
+gluster_infra_lv_poolmetadatasize: 1G
+
+# Create thinpools
+# 4g/2.5
+gluster_infra_thinpools:
+  - {vgname: 'GLUSTER_vg1', thinpoolname: 'GLUSTER_pool1', thinpoolsize: '45G', poolmetadatasize: '2G'}
+#  - {vgname: 'GLUSTER_vg1', thinpoolname: 'GLUSTER_pool1', thinpoolsize: '896G', poolmetadatasize: '16G'}
+#  - {vgname: 'GLUSTER_vg2', thinpoolname: 'GLUSTER_pool2', thinpoolsize: '896G', poolmetadatasize: '16G'}
+#  - {vgname: 'GLUSTER_vg3', thinpoolname: 'GLUSTER_pool3', thinpoolsize: '896G', poolmetadatasize: '16G'}
+#  - {vgname: 'ans_vg', thinpoolname: 'ans_thinpool', thinpoolsize: '1G', poolmetadatasize: '15M', opts: "", pvs: '/dev/sdd1,/dev/sdg1', meta_opts: '--type raid1', meta_pvs: '/dev/sde1,/dev/sdf1' }
+#    - {vgname: 'ans_vg3', thinpoolname: 'ans_thinpool8', thinpoolsize: '1G', poolmetadatasize: '15M', opts: "--type raid5 --nosync -i 2", pvs: '/dev/sdb1,/dev/sdd1,/dev/sdg1', raid: {level: 5, stripe: 64, devices: 3 }}
+
+# Create a thin volume
+gluster_infra_lv_logicalvols:
+  - { vgname: 'GLUSTER_vg1', thinpool: 'GLUSTER_pool1', lvname: 'GLUSTER_lv1', lvsize: '45G' }
+#  - { vgname: 'GLUSTER_vg1', thinpool: 'GLUSTER_pool1', lvname: 'GLUSTER_lv1', lvsize: '896G' }
+#  - { vgname: 'GLUSTER_vg2', thinpool: 'GLUSTER_pool2', lvname: 'GLUSTER_lv2', lvsize: '896G' }
+#  - { vgname: 'GLUSTER_vg3', thinpool: 'GLUSTER_pool3', lvname: 'GLUSTER_lv3', lvsize: '896G' }
+#  - { vgname: 'ans_vg', thinpool: 'ans_thinpool4', lvname: 'ans_thinlv5', lvsize: '1G', pvs: '/dev/sdd1,/dev/sdg1', opts: '--type raid1', meta_opts: '--type raid1', meta_pvs: '/dev/sde1,/dev/sdf1' }
+#  - { vgname: 'ans_vg3', thinpool: 'ans_thinpool8', lvname: 'ans_thinlv3', lvsize: '100M', raid: {level: 5, stripe: 64, devices: 3 }}
+#  https://github.com/gluster/gluster-ansible-infra
+#
+
+# Creat thickvolume 
+# gluster_infra_thick_lvs 
+# Optional. Needed only if thick volume has to be created. This is a dictionary with vgname, lvname, and size as keys. See below for example
+#  gluster_infra_thick_lvs:
+#     - { vgname: 'vg_sdb', lvname: 'thick_lv_1', size: '500G' }
+#     - { vgname: 'vg_sdc', lvname: 'thick_lv_2', size: '100G' }
+#     - { vgname: 'ans_vg', lvname: 'ans_thick2_vdo', size: '9G', atboot: yes, skipfs: yes, opts: "", pvs: '/dev/sdd1,/dev/sdg1' }
+
+
+
+# Mount the devices
+gluster_infra_mount_devices:
+  - { path: '/gluster/brick1', vgname: 'GLUSTER_vg1', lvname: 'GLUSTER_lv1' }
+#  - { path: '/gluster/brick2', vgname: 'GLUSTER_vg2', lvname: 'GLUSTER_lv2' }
+ # - { path: '/gluster/brick3', vgname: 'GLUSTER_vg3', lvname: 'GLUSTER_lv3' }
+
+# use lvmcache 
+# his variable contains list of dictionaries for setting up LV cache. Variable has following keys: vgname, 
+# cachedisk, cachethinpoolname, cachelvname, cachelvsize, cachemetalvname, cachemetalvsize, cachemode. 
+# gluster_infra_cache_vars
+
+# gluster_infra_lvm
+# This variable contains a dictionary, which defines how lvm should autoextend thinpools
+
+
+#fstrim_service
+#This variable contains a dictionary, which enables when and how often a TRIM command should be send to the mounted fs, which support this
+
+
+
+# cluster config var 
+
+#    defaults for gluster_volume
+#    gluster_cluster_volume: glustervol
+#    gluster_cluster_transport: tcp
+#    gluster_cluster_disperse_count: 0
+#    gluster_cluster_arbiter_count: 0
+#    gluster_cluster_redundancy_count: 0
+#    gluster_cluster_state: present
+#    gluster_cluster_state      present / absent / started / stopped / set 
+#    If value is present volume will be created. If value is absent, volume will be deleted. If value is started, volume will be started. If value is stopped, volume will be stopped.
+#    gluster_cluster_force: yes
+#    
+#    # defaults for gluster_add_brick
+#    #
+#    # # defaults for gluster_remove_brick
+#    #
+#    # # defaults for gluster_replace_brick
+#    #
+
+gluster_cluster_volume: 'testvol'
+#gluster_cluster_bricks: '/gluster/brick1,/gluster/brick2,/gluster/brick3'
+#need gluster_cluster_hosts
+gluster_cluster_bricks: '/gluster/brick1'
+# or 
+#gluster_cluster_bricks: 'host1:/gluster/brick1'

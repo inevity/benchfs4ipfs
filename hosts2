@@ -1,0 +1,65 @@
+[all:vars]
+#gateway=['192.168.1.1','192.168.2.1','192.168.3.1']
+#interface={'pri_dev':'eth1', 'manage_dev': 'eth2', 'pub_dev': 'eth3'}
+gateway=['','172.18.1.1','']
+interface={'pri_dev':'ens224', 'manage_dev': 'ens192', 'pub_dev': 'ens256'}
+
+# username default root see groups/all/vars
+vault_machine_pass='123456'
+
+
+## for master 
+# note: cannot comment follow the var. such as 
+# web_ip=192.168.4.10 from f
+web_ip=192.168.4.10
+web_ip_mask=16
+ntpips=['cn.ntp.org.cn']
+
+# gluster_volumes=testvol
+# gluster_cluster_replica_count=3
+# #gluster_cluster_disperse_count=3
+node0=rpm9.tc.com
+# build="upstream"
+# #build="custom"
+# #custom_build_url="https://download.gluster.org/pub/gluster/glusterfs/8/8.1/Fedora/fedora-32/x86_64/"
+# #custom_build_repo_url=
+# #custom_build_path=/tmp/rpms/
+benchmarking_tools=1
+# backend_variables=~/config-for-cluster1/cluster1-backend-vars.yml
+# cleanup_vars=~/config-for-cluster1/cluster1-cleanup-vars.yml
+# rhsm_vars=~/config-for-cluster1/rhsm-vars.yml
+# use_rhsm_repository=0
+tool="smallfile"
+download_results_at_location=/root/
+[control]
+control_machine ansible_host=127.0.0.1 ansible_connection=local manage_ip="172.18.123.49"
+
+[cluster_servers]
+# for production deploy, alway have three interfaces, and maybe only two ip need config.
+#ans1.tc.com ips=['192.168.1.15/24','192.168.2.15/24','192.168.3.15/24'] manage_ip="192.168.2.15" 
+# sambe order as interfaces={'pri_dev':'eth1', 'manage_dev': 'eth2', 'pub_dev': 'eth3'}
+# when config, we can exclude the manage_dev ipconfig,but how
+#rpm9.tc.com ips=['192.168.1.15/24','192.168.2.15/24','192.168.3.15/24'] manage_ip="192.168.2.15" 
+
+#ans2.tc.com ips=['192.168.1.16/24','192.168.2.16/24','192.168.3.16/24'] manage_ip="192.168.2.16" 
+#ans3.tc.com ips=['192.168.1.17/24','192.168.2.17/24','192.168.3.17/24'] manage_ip="192.168.2.17" 
+rpm9.tc.com ips=['172.169.100.49/16','172.18.123.49/16','10.10.210.49/16'] manage_ip="172.18.123.49"
+
+[cluster_clients]
+#ans4.tc.com should_mount_from=ans1.tc.com ips=['192.168.1.18/16','192.168.2.18/16','192.168.3.18/16'] manage_ip="192.168.2.18" 
+rpm9.tc.com should_mount_from=rpm9.tc.com
+
+
+[cluster_machines:children]
+cluster_servers
+cluster_clients
+
+[master]
+# master can any node, not need to be on storage node 
+rpm9.tc.com
+
+[slaves:children]
+cluster_servers
+
+[master_client]
+rpm9.tc.com

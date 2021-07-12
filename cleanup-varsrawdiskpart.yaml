@@ -1,0 +1,38 @@
+gluster_volumes: testvol
+gluster_infra_reset_mnt_paths:
+  - /gluster/brick1
+#  - /gluster/brick2
+# - /gluster/brick3
+
+# for rawdev/rawpart case, wehter have partition ,we first remove the partion 
+# !!!!! now just if use partition, then must add this var 
+# from gluster_infra_rawdev:
+
+gluster_infra_reset_rawdev:
+  #- { rawdevname: '/dev/sdb', skipfs: no, raid : {level 5, strip: 64, devices: 3}}
+  - { rawdevname: '/dev/sdb' }
+
+# for rawdisk deploy, need comment this,just above 
+## TODO: var precedence; to move to default 
+#gluster_infra_reset_volume_groups:
+#  - GLUSTER_vg1
+##  - GLUSTER_vg2
+##  - GLUSTER_vg3
+#
+
+# should also remove lv ,thinpool and vg.
+#gluster_infra_lv_logicalvols:
+#  - { vgname: 'GLUSTER_vg1', thinpool: 'GLUSTER_pool1', lvname: 'GLUSTER_lv1', lvsize: '45G' }
+
+
+#gluster_volumes: testvol
+#gluster_infra_reset_mnt_paths:
+#  - /mnt/brick0
+#  - /mnt/brick1
+#gluster_infra_reset_volume_groups:
+#  - vg_vdb
+#  - vg_vdc
+#gluster_infra_reset_vdos:
+#  - foo_1
+#  - foo_2
+
