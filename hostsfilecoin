@@ -4,7 +4,7 @@ gateway=['','','']
 # now support diff interface?
 interface={'pri_dev':'p2p1', 'manage_dev': 'em1', 'pub_dev': 'p2p1'}
 # username default root see groups/all/vars
-vault_machine_pass='12345'
+vault_machine_pass='123456'
 
 
 ## for master 
@@ -29,9 +29,11 @@ control_machine ansible_host=127.0.0.1 ansible_connection=local manage_ip="172.1
 
 #ans2.tc.com ips=['192.168.1.16/24','192.168.2.16/24','192.168.3.16/24'] manage_ip="192.168.2.16" 
 #ans3.tc.com ips=['192.168.1.17/24','192.168.2.17/24','192.168.3.17/24'] manage_ip="192.168.2.17" 
+#ipfs112.tc.com  ansible_host=172.16.10.64 ips=['10.10.10.64/24','172.16.10.64/24','172.18.10.64/24'] manage_ip="172.16.10.64"
 ipfs112.tc.com ips=['10.10.10.64/24','172.16.10.64/24','172.18.10.64/24'] manage_ip="172.16.10.64"
+#ipfs111.tc.com ansbile_host=172.16.10.18 ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage_ip="172.16.10.18"
 ipfs111.tc.com ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage_ip="172.16.10.18"
-#ipfs110.tc.com ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage_ip="172.16.10.18"
+#ipfs110.tc.com ansible_host=172.16.10.xx ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage_ip="172.16.10.18"
 
 [cluster_clients]
 #ans4.tc.com should_mount_from=ans1.tc.com ips=['192.168.1.18/16','192.168.2.18/16','192.168.3.18/16'] manage_ip="192.168.2.18" 
@@ -50,3 +52,6 @@ cluster_clients
 
 [slaves:children]
 cluster_servers
+
+[master_client]
+ipfs111.tc.com

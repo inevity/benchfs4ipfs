@@ -1,15 +1,15 @@
 ---
 # Set a disk type, Options: JBOD, RAID6, RAID10
-gluster_infra_disktype: JBOD
+gluster_infra_disktype: RAID0
 
 
 # RAID6 and RAID10 diskcount (Needed only when disktype is raid)
-gluster_infra_diskcount: 10
+gluster_infra_diskcount: 1
 # gluster_infra_stripe_unit_size
 # # Required only in case of RAID6 and RAID10. Stripe unit size always in KiB, do
 # # not provide the trailing `K' in the value.
-# Stripe unit size always in KiB
-gluster_infra_stripe_unit_size: 128
+# Stripe unit size always in KiB 
+gluster_infra_stripe_unit_size: 64
 
 #fstrim_service
 #This variable contains a dictionary, which enables when and how often a TRIM command should be send to the mounted fs, which support this
@@ -19,9 +19,13 @@ gluster_infra_stripe_unit_size: 128
 gluster_infra_rawdev:
   #- { rawdevname: '/dev/sdb', skipfs: no, raid : {level 5, strip: 64, devices: 3}}
   - { rawdevname: '/dev/sdb' }
+  - { rawdevname: '/dev/sdc' }
+  - { rawdevname: '/dev/sdd' }
 gluster_infra_rawpart: false
 gluster_infra_mount_rawdevices:
   - { path: '/gluster/brick1', dev: '/dev/sdb' }
+  - { path: '/gluster/brick2', dev: '/dev/sdc' }
+  - { path: '/gluster/brick3', dev: '/dev/sdd' }
 # need resetvolum to remove lvm member.
 gluster_infra_fs_force: true
 
@@ -29,13 +33,29 @@ gluster_infra_fs_force: true
 
 
 # cluster config var 
+#for gluster.cluster
 
-#    defaults for gluster_volume
+#    defaults for gluster_volume in gluster.cluster
 #    gluster_cluster_volume: glustervol
 #    gluster_cluster_transport: tcp
-#    gluster_cluster_disperse_count: 0
 #    gluster_cluster_arbiter_count: 0
+#
+#    for ec 
+#    gluster_cluster_disperse_count: 0
 #    gluster_cluster_redundancy_count: 0
+#    now two node, 3 disk perf node . total 6. 
+#
+gluster_cluster_disperse_count: 6
+gluster_cluster_redundancy_count: 2
+#
+#    for replica and distribute replic 
+#    replicas: gluster_cluster_replica_count
+
+#    for arbiter volume 
+#    replicas: gluster_cluster_replica_count
+#    gluster_cluster_arbiter_count    
+
+
 #    gluster_cluster_state: present
 #    gluster_cluster_state      present / absent / started / stopped / set 
 #    If value is present volume will be created. If value is absent, volume will be deleted. If value is started, volume will be started. If value is stopped, volume will be stopped.
@@ -48,12 +68,19 @@ gluster_infra_fs_force: true
 #    # # defaults for gluster_replace_brick
 #    #
 
+# bricks: "{{ gluster_cluster_bricks }}"
+# Brick paths on servers. Multiple brick paths can be separated by comma
+# Bricks that form the GlusterFS volume. The format of the bricks would be hostname:mountpoint/brick_dir 
+# alternatively user can provide just mountpoint/birck_dir, in such a case gluster_hosts variable has to be set
+#
+#now 不一致个数的话，能创建吗？
+# cluster: "{{ gluster_cluster_hosts }}"
 
-#for gluster.cluster
+
 
 gluster_cluster_volume: 'testvol'
-#gluster_cluster_bricks: '/gluster/brick1,/gluster/brick2,/gluster/brick3'
+gluster_cluster_bricks: '/gluster/brick1,/gluster/brick2,/gluster/brick3'
 #need gluster_cluster_hosts
-gluster_cluster_bricks: '/gluster/brick1'
+#gluster_cluster_bricks: '/gluster/brick1'
 # or 
 #gluster_cluster_bricks: 'host1:/gluster/brick1'
