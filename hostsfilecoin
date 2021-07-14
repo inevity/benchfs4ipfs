@@ -46,7 +46,7 @@ cluster_clients
 
 [master]
 # master can any node, not need to be on storage node 
-ipfs112.tc.com
+#ipfs112.tc.com
 
 [slaves:children]
 cluster_servers
