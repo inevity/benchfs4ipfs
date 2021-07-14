@@ -1,0 +1,1581 @@
+lsblk
+    2  smartctl
+    3  sudo apt install smartmontools
+    4  smartctl --scan
+    5  smartctl -i
+    6  smartctl -i /dev/sda
+    7  sudo su
+    8  yum apt -y ntp
+    9  apt -y ntp
+   10  apt install -y ntp
+   11  apt-get install ntp
+   12  sudo apt-get install ntp
+   13  ntpdate cn.pool.ntp.org
+   14  sudo apt install ntpdate
+   15  ntpdate cn.pool.ntp.org
+   16  sudo ntpdate cn.pool.ntp.org
+   17  date
+   18  sudo su
+   19  vim install.sh
+   20  sh install.sh
+   21  cat install.sh
+   22  echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+   23  source ~/.bashrc
+   24  vim install.sh
+   25  ls
+   26  df -h
+   27  ls -lah
+   28  df -h
+   29  lsblk
+   30  mkfs.xfs -f  -i size=512 -n size=8192 -d sw=5,su=128k /dev/sdb
+   31  sudo mkfs.xfs -f  -i size=512 -n size=8192 -d sw=5,su=128k /dev/sdb
+   32  mkdir /mnt/ipfs
+   33  ls
+   34  sudo mkdir /mnt/ipfs
+   35  sudo vim /etc/fstab
+   36  cat /etc/fstab
+   37  sudo mount -a
+   38  df -h
+   39  vim install.sh
+   40  sh install.sh
+   41  cat install.sh
+   42  sudo mkdir /mnt/ipfs/.lotuscalibnet
+   43  sudo mkdir /mnt/ipfs/.lotusminercalibnet
+   44  vim install.sh
+   45  sh install.sh
+   46  cat ~/.bashrc
+   47  vim ~/.bashrc
+   48  vim install.sh
+   49  sh install.sh
+   50  vim install.sh
+   51  sh install.sh
+   52  ls
+   53  git status
+   54  ls
+   55  vim install.sh
+   56  vim ~/.gitconfig
+   57  sh install.sh
+   58  vim install.sh
+   59  sh install.sh
+   60  vim install.sh
+   61  sh install.sh
+   62  vim install.sh
+   63  sh install.sh
+   64  vim ~/.gitconfig
+   65  vim install.sh
+   66  vim ~/.gitconfig
+   67  vim install.sh
+   68  sh install.sh
+   69  vim ~/.gitconfig
+   70  vim install
+   71  ls
+   72  rm -rf lotus/
+   73  sudo rm -rf lotus/
+   74  vim install
+   75  sh install.sh
+   76  vim install
+   77  vim ~/.gitconfig
+   78  sh install.sh
+   79  go --version
+   80  vim ~/.gitconfig
+   81  vim install.sh
+   82  cat ~/.bashrc
+   83  vim install.sh
+   84  sudo su
+   85  exit
+   86  free -h
+   87  top
+   88  w
+   89  ls
+   90  sudo su
+   91  uname -a
+   92  df -h
+   93  free -m
+   94  top
+   95  free -m
+   96  sudo su
+   97  ls
+   98  cat 00-installer-config.yaml
+   99  history |grep 00-installer-config.yaml
+  100  ip addr
+  101  ls -lah
+  102  cat .gitconfig
+  103  cat envvar
+  104  cat install.sh
+  105  history
+   sync
+
+1  smartctl -i /dev/sda
+    2  lsblk
+    3  vim install
+    4  vim install.sh
+    5  cat /home/ipfs/.bashrc
+    6  vim ~/.bashrc
+    7  exit
+    8  vim ~/.bashrc
+    9  exit
+   10  ntpdate cn.pool.ntp.org
+   11  systemctl status ntp
+   12  date
+   13  free -h
+   14  ctdb ip
+   15  vim install.sh
+   16  sh install
+   17  date
+   18  go --version
+   19  ls -lah install*
+   20  vim install
+   21  vim install.sh
+   22  1sh install.sh
+   23  timedatectl set-timezone Asia/Shanghai
+   24  date
+   25  sh install.sh
+   26  lotus sync status
+   27  df -h
+   28  lotus sync status
+   29  lotus sync wait
+   30  lotus sync status
+   31  lotus sync wait
+   32  df -h
+   33  cat /etc/fstab
+   34  lotus sync wait
+   35  ls
+   36  ls /mnt/ipfs/.lotuscalibnet/
+   37  ls /mnt/ipfs/.lotusminercalibnet/
+   38  ls /mnt/ipfs/.lotuscalibnet/
+   39  df -h
+   40  top
+   41  ls
+   42  ls -lah
+   43  lotus sync status
+   44  lotus sync wait
+   45  ls /mnt/ipfs/.lotuscalibnet/
+   46  lotus sync wait
+   47  lotus sync status
+   48  systemctl status lotus-daemon
+   49  lotus sync status
+   50  systemctl status lotus-daemon
+   51  lotus sync wait
+   52  systemctl status lotus-daemon
+   53  lotus sync wait
+   54  systemctl status lotus-daemon
+   55  free -m
+   56  lotus sync wait
+   57  lotus wait-api
+   58  time lotus wait-api
+   59  lotus sync wait
+   60  systemctl status lotus-daemon
+   61  cat /var/log/lotus/daemon.log
+   62  tail -f  /var/log/lotus/daemon.log
+   63  systemctl status lotus-daemon
+   64  time lotus wait-api
+   65  lotus sync wait
+   66  systemctl status lotus-daemon
+   67  tail -f  /var/log/lotus/daemon.log
+   68  cat install.sh
+   69  tail -f  /var/log/lotus/daemon.log
+   70  df -h
+   71  ls /var/tmp/filecoin-proof-parameters/
+   72  lotus sync wait
+   73  vim install.sh
+   74  vim ~/.bashrc
+   75  vim install.sh
+   76  vim ~/.bashrc
+   77  mkdir /mnt/ipfs/proofspara
+   78  mkdir /mnt/ipfs/proofspare
+   79  vim ~/.bashrc
+   80  mkdir /mnt/ipfs/tmpdirforseal
+   81  vim ~/.bashrc
+   82  source ~/.bashrc
+   83  git stauts
+   84  vim ~/.bashrc
+   85  systemctl satus lotus-daemon
+   86  systemdctl satus lotus-daemon
+   87  systemctl status lotus-daemon
+   88  systemctl restart lotus-daemon
+   89  systemctl status lotus-daemon
+   90  lotus sync wait
+   91  tail -f /var/log/lotus/daemon.log
+   92  systemctl stop lotus-daemon
+   93  vim ~/.lotus/
+   94  du -sh ~/.lotus/
+   95  rm -rf ~/.lotus/
+   96  ls
+   97  systemctl start lotus-daemon
+   98  systemctl status lotus-daemon
+   99  history
+  100  cat ~/.bashrc
+  101  ls /mnt/ipfs/.lotuscalibnet
+  102  ls /mnt/ipfs/.lotuscalibnet/
+  103  du -sh ~/.lotus/
+  104  ls
+  105  systemctl stop lotus-daemon
+  106  ls
+  107  vim install.sh
+  108  source ~/.bashrc
+  109  sh install.sh
+  110  vim install.sh
+  111  sh install.sh
+  112  time lotus wait-api
+  113  ls ~/.lotus/
+  114  ls /mnt/ipfs/.lotuscalibnet/
+  115  vim install.sh
+  116  cat ~/.bashrc
+  117  systemctl status lotus-daemon
+  118  vim /etc/systemd/system/lotus-daemon.service
+  119  cat ~/.bashrc
+  120  time lotus wait-api
+  121  clear
+  122  ls
+  123  dstat -sam
+  124  top
+  125  free -h
+  126  apt install -y dstat
+  127  dstat -asm
+  128  clear
+  129  ls
+  130  free -h
+  131  lsblk
+  132  users
+  133  ls
+  134  git clone https://github.com/filecoin-project/rust-fil-proofs.git
+  135  cat /home/ipfs/.gitconfig
+  136  cp /home/ipfs/.gitconfig ~/
+  137  git clone https://github.com/filecoin-project/rust-fil-proofs.git
+  138  cd rust-fil-proofs/
+  139  vim ~/.bashrc
+  140  source /home/ipfs/.cargo/env
+  141  rust
+  142  cat /home/ipfs/.cargo/env
+  143  cat /home/ipfs/.bashrc
+  144  cat /home/ipfs/.cargo/env
+  145  vim ~/.bashrc
+  146  source ~/.bashrc
+  147  apt install ocl-icd-opencl-dev
+  148  ls
+  149  tail -f /var/log/lotus/daemon.log
+  150  vim ../install.sh
+  151  cat ~/.bashrc
+  152  vim ../install.sh
+  153  lotus sync wait
+  154  lotus sync status
+  155  ls
+  156  ls /mnt/ipfs/.lotuscalibnet/
+  157  ls /mnt/ipfs/.lotuscalibnet/ -lah
+  158  ls ~/.lotu
+  159  tail -f /var/log/lotus/daemon.log
+  160  ls /var/log/lotus/daemon.log
+  161  tail -f  /var/log/lotus/daemon.log
+  162  lotus sync status
+  163  ls
+  164  dpkg -h
+  165  dpkg --help
+  166  dpkg --list|grep hwloc
+  167  ls
+  168  vim Cargo.toml
+  169  vim filecoin-proofs/Cargo.toml
+  170  vim filecoin-hashers/Cargo.toml
+  171  vim fil-proofs-param/Cargo.toml
+  172  vim /home/ipfs/lotus/Makefile
+  173  vim /home/
+  174  vim /home/ipfs/lotus/.gitmodules
+  175  vim /home/ipfs/lotus/scripts/build-bundle.sh
+  176  grep -nr rust-fil-proofs /home/ipfs/lotus/
+  177  cargo list features
+  178  ls
+  179  vim fil-proofs-param/Cargo.toml
+  180  vim fil-proofs-tooling/Cargo.toml
+  181  vim filecoin-hashers/Cargo.toml
+  182  vim filecoin-proofs/Cargo.toml
+  183  vim fr32/Cargo.toml
+  184  vim sha2raw/Cargo.toml
+  185  vim storage-proofs-core/Cargo.toml
+  186  vim storage-proofs-porep/Cargo.toml
+  187  vim storage-proofs-post/Cargo.toml
+  188  git log
+  189  ls
+  190  git branch -a
+  191  grep -nr gpu2
+  192  grep -nr gpu2 .
+  193  vim CHANGELOG.md
+  194  find . -name parameters.json
+  195  vim ./filecoin-proofs/parameters.json
+  196  vim ./parameters.json
+  197  vim ./storage-proofs-core/parameters.json
+  198  vim ./fil-proofs-param/parameters.json
+  199  cat rust-toolchain
+  200  1export FIL_PROOFS_PARAMETER_CACHE=
+  201  ls
+  202  mkdir /mnt/ipfs/filecoin-proof-parameters
+  203  1export FIL_PROOFS_PARAMETER_CACHE=/mnt/ipfs/filecoin-proof-parameters
+  204  echo $FIL_PROOFS_PARAMETER_CACHE
+  205  cat ~/.bashrc
+  206  cat /etc/systemd/system/lotus-miner.service
+  207  cat /home/ipfs/envvar
+  208  export FIL_PROOFS_PARAMETER_CACHE=/mnt/ipfs/filecoin-proof-parameters
+  209  echo $FIL_PROOFS_PARAMETER_CACHE
+  210  export RUST_LOG=info
+  211  1cargo +
+  212  cat rust-toolchain
+  213  cargo test --all --verbose --no-default-features --features pairing
+  214  ls
+  215  du /mnt/ipfs/filecoin-proof-parameters/
+  216  du -sh /mnt/ipfs/filecoin-proof-parameters/
+  217  cargo run --release --bin benchy -- window-post --size 2
+  218  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  219  RUST_BACKTRACE=1 cargo run --release --bin benchy -- merkleproofs --size 2
+  220  RUST_BACKTRACE=1 cargo run --release --bin benchy -- merkleproofs --size 2kiB
+  221  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  222  RUST_BACKTRACE=1 cargo cargo run --release --bin benchy -- winning-post --size 2kiB
+  223  RUST_BACKTRACE=1 cargo run --release --bin benchy -- winning-post --size 2kiB
+  224  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2KiB --cache window-post-2KiB-dir --preserve-cache
+  225  git status
+  226  vim getpara.sh
+  227  env
+  228  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST|
+  229  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  230  unset FIL_PROOFS_PARENT_CACHE
+  231  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  232  export FIL_PROOFS_PARENT_CACHE=/mnt/ipfs/filecoin-proof-parametersparecache
+  233  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  234  mkdir /mnt/ipfs/filecoin-proof-parametersparecache
+  235  vim getpara.sh
+  236  ls /mnt/ipfs/filecoin-proof-parameters
+  237  sh getpara.sh
+  238  rm -rf /mnt/ipfs/filecoin-proof-parameters/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-0-0-*
+  239  vim getpara.sh
+  240  apt install axel
+  241  sh getpara.sh
+  242  vim getpara.sh
+  243  sh getpara.sh
+  244  vim getpara.sh
+  245  sh getpara.sh
+  246  vim getpara.sh
+  247  rm -rf /mnt/ipfs/filecoin-proof-parameters/v28-*
+  248  sh getpara.sh
+  249  history
+  250  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  251  1RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  252  vim getpara.sh
+  253  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 32GiB
+  254  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 512MiB
+  255  ls
+  256  lotus -h
+  257  lotus state -h
+  258  lotus sync --help
+  259  lotus n
+  260  vim srs-inner-product.json
+  261  cargo build --release --workspace
+  262  ls
+  263  ls -alht
+  264  cargo run --release --bin paramfetch -- -a -j srs-inner-product.json
+  265  https_proxy=http://192.168.1.185:8080 cargo run --release --bin paramfetch -- -a -j srs-inner-product.json
+  266  ls -laht /mnt/ipfs/proofspara/
+  267  ls -lat /mnt/ipfs/proofspara/
+  268  /root/paramcache --sector-sizes='2048,536870912'
+  269  https_proxy=http://192.168.1.185:8080 cargo run --release --bin paramfetch -- -a -j srs-inner-product.json
+  270  history
+  271  1RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  272  export BELLMAN_NO_GPU=1
+  273  RUST_BACKTRACE=1 cargo run --release --bin benchy -- help
+  274  RUST_BACKTRACE=1 cargo run --release --bin benchy -- windows-post --help
+  275  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --help
+  276  grep -nri BELLMAN_NO_GPU .
+  277  history
+  278  1RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  279  grep -nr FFI_BUILD_FROM_SOURCE .
+  280  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --bin benchy -- window-post --size 2kiB
+  281  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --bin benchy -- window-post --size 512MiB
+  282  history
+  283  vim bench.sh
+  284  python3
+  285  vim bench.sh
+  286  cargo run --bin settings
+  287  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --verbose --bin settings
+  288  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --verbose --all --bin settings
+  289  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --all --no-default-features --features pairing --verbose  --bin settings
+  290  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --verbose  --bin settings
+  291  ls
+  292  vim rust-fil-proofs.config.toml.sample
+  293  grep -nr use_multicore_sdr .
+  294  grep -nr use_multicore_sdr storage-proofs-core/
+  295  vim storage-proofs-core/src/settings.rs
+  296  export FIL_PROOFS_USE_MULTICORE_SDR=true
+  297  vim bench.sh
+  298  history |grep export
+  299  vim bench.sh
+  300  cat /home/ipfs/envvar
+  301  vim bench.sh
+  302  cat rust-fil-proofs.config.toml.sample
+  303  vim bench.sh
+  304  sh bench.sh
+  305  dmesg
+  306  free -h
+  307  grep -nr FIL_PROOFS_PARENT_CACHE_SIZE .
+  308  grep -nir FIL_PROOFS_PARENT_CACHE_SIZE .
+  309  grep -nir PARENT_CACHE_SIZE .
+  310  grep -nir CACHE_SIZE .
+  311  vim rust-fil-proofs.config.toml.sample
+  312  vim bench.sh
+  313  sh bench.sh
+  314  swapoff --help
+  315  vim bench.sh
+  316  df -h
+  317  free -m
+  318  vim bench.sh
+  319  swapoff --help
+  320  vim bench.sh
+  321  cat /etc/fstab
+  322  vim /etc/fstab
+  323  vim bench.sh
+  324  sh bench.sh
+  325  vim bench.sh
+  326  sh bench.sh
+  327  df -h
+  328  free -m
+  329  swapoff -h
+  330  swapoff -h
+  331  swapoff -a
+  332  vim bench.sh
+  333  ls /mnt/ipfs/swapfile -lah
+  334  sh bench.sh
+  335  vim bench.sh
+  336  df -h
+  337  free -m
+  338  swapoff -a
+  339  vim bench.sh
+  340  time sh bench.sh
+  341  vim bench.sh
+  342  time sh bench.sh
+  343  vim bench.sh
+  344  time sh bench.sh
+  345  vim bench.sh
+  346  /root/paramcache -g
+  347  /root/paramcache -h
+  348  time sh bench.sh
+  349  mkdir /mnt/ipfs/filecoin-proof-parameterstmpdirforseal
+  350  time sh bench.sh
+  351  vim bench.sh
+  352  time sh bench.sh
+  353  history >> /root/history
+  354  exit
+  355  cleae
+  356  clear
+  357  ls
+  358  top
+  359  dstat -sam
+  360  dstat -asm
+  361  top
+  362  clar
+  363  ls
+  364  cle
+  365  dstat -sam
+  366  top
+  367  clear
+  368  lsblk
+  369  smartctl -a /dev/sdc
+  370  smartctl -a /dev/sdb
+  371  lsscsi
+  372  hdparm -i /dev/sda
+  373  lsblk
+  374  lsblk -f
+  375  smartctl -a /dev/sda
+  376  lsblk
+  377  smartctl --all /dev/sda
+  378  smartctl --all /dev/sdb
+  379  smartctl -a /dev/sda
+  380  apt-get install smartmontools
+  381  smartctl -a /dev/sda
+  382  ip a
+  383  lsblk
+  384  smartctl -a /dev/sdn
+  385  smartctl -a /dev/sdb
+  386  smartctl -i /dev/sdb
+  387  systemctl status smatd
+  388  systemctl status smartd
+
+
+root@ipfs:/home/ipfs# history
+    1  smartctl -i /dev/sda
+    2  lsblk
+    3  vim install
+    4  vim install.sh
+    5  cat /home/ipfs/.bashrc
+    6  vim ~/.bashrc
+    7  exit
+    8  vim ~/.bashrc
+    9  exit
+   10  ntpdate cn.pool.ntp.org
+   11  systemctl status ntp
+   12  date
+   13  free -h
+   14  ctdb ip
+   15  vim install.sh
+   16  sh install
+   17  date
+   18  go --version
+   19  ls -lah install*
+   20  vim install
+   21  vim install.sh
+   22  1sh install.sh
+   23  timedatectl set-timezone Asia/Shanghai
+   24  date
+   25  sh install.sh
+   26  lotus sync status
+   27  df -h
+   28  lotus sync status
+   29  lotus sync wait
+   30  lotus sync status
+   31  lotus sync wait
+   32  df -h
+   33  cat /etc/fstab
+   34  lotus sync wait
+   35  ls
+   36  ls /mnt/ipfs/.lotuscalibnet/
+   37  ls /mnt/ipfs/.lotusminercalibnet/
+   38  ls /mnt/ipfs/.lotuscalibnet/
+   39  df -h
+   40  top
+   41  ls
+   42  ls -lah
+   43  lotus sync status
+   44  lotus sync wait
+   45  ls /mnt/ipfs/.lotuscalibnet/
+   46  lotus sync wait
+   47  lotus sync status
+   48  systemctl status lotus-daemon
+   49  lotus sync status
+   50  systemctl status lotus-daemon
+   51  lotus sync wait
+   52  systemctl status lotus-daemon
+   53  lotus sync wait
+   54  systemctl status lotus-daemon
+   55  free -m
+   56  lotus sync wait
+   57  lotus wait-api
+   58  time lotus wait-api
+   59  lotus sync wait
+   60  systemctl status lotus-daemon
+   61  cat /var/log/lotus/daemon.log
+   62  tail -f  /var/log/lotus/daemon.log
+   63  systemctl status lotus-daemon
+   64  time lotus wait-api
+   65  lotus sync wait
+   66  systemctl status lotus-daemon
+   67  tail -f  /var/log/lotus/daemon.log
+   68  cat install.sh
+   69  tail -f  /var/log/lotus/daemon.log
+   70  df -h
+   71  ls /var/tmp/filecoin-proof-parameters/
+   72  lotus sync wait
+   73  vim install.sh
+   74  vim ~/.bashrc
+   75  vim install.sh
+   76  vim ~/.bashrc
+   77  mkdir /mnt/ipfs/proofspara
+   78  mkdir /mnt/ipfs/proofspare
+   79  vim ~/.bashrc
+   80  mkdir /mnt/ipfs/tmpdirforseal
+   81  vim ~/.bashrc
+   82  source ~/.bashrc
+   83  git stauts
+   84  vim ~/.bashrc
+   85  systemctl satus lotus-daemon
+   86  systemdctl satus lotus-daemon
+   87  systemctl status lotus-daemon
+   88  systemctl restart lotus-daemon
+   89  systemctl status lotus-daemon
+   90  lotus sync wait
+   91  tail -f /var/log/lotus/daemon.log
+   92  systemctl stop lotus-daemon
+   93  vim ~/.lotus/
+   94  du -sh ~/.lotus/
+   95  rm -rf ~/.lotus/
+   96  ls
+   97  systemctl start lotus-daemon
+   98  systemctl status lotus-daemon
+   99  history
+  100  cat ~/.bashrc
+  101  ls /mnt/ipfs/.lotuscalibnet
+  102  ls /mnt/ipfs/.lotuscalibnet/
+  103  du -sh ~/.lotus/
+  104  ls
+  105  systemctl stop lotus-daemon
+  106  ls
+  107  vim install.sh
+  108  source ~/.bashrc
+  109  sh install.sh
+  110  vim install.sh
+  111  sh install.sh
+  112  time lotus wait-api
+  113  ls ~/.lotus/
+  114  ls /mnt/ipfs/.lotuscalibnet/
+  115  vim install.sh
+  116  cat ~/.bashrc
+  117  systemctl status lotus-daemon
+  118  vim /etc/systemd/system/lotus-daemon.service
+  119  cat ~/.bashrc
+  120  time lotus wait-api
+  121  systemctl status lotus-daemon
+  122  tail -f /var/log/lotus/daemon.log
+  123  lotus sync status
+  124  lotus sync wait
+  125  rm -rf /var/log/lotus/daemon.log
+  126  systemctl restart lotus-daemon
+  127  tail -f /var/log/lotus/daemon.log
+  128  lotus sync wait
+  129  source ~/.bashrc
+  130  vim install.sh
+  131  du -sh ~/.lotus/
+  132  vim install.sh
+  133  rm -rf ~/.lotus/
+  134  vim install.sh
+  135  sh install.sh
+  136  vim install.sh
+  137  sh install.sh
+  138  systemctl status lotus-daemon
+  139  tail -f /var/log/lotus/daemon.log
+  140  ip addr
+  141  systemctl status lotus-daemon
+  142  lotus sync status
+  143  lotus sync wait
+  144  vim install.sh
+  145  vim /etc/systemd/system/lotus-daemon.service
+  146  systemctl restart lotus-daemon
+  147  netstat -ntlp |grep 25001
+  148  telnet 172.18.200.10 25001
+  149  telnet 123.118.15.110 25001
+  150  lotus sync wait
+  151  ls ~/.lotus/
+  152  cat ~/.bashrc
+  153  ls ~/.lotus/
+  154  ls /mnt/ipfs/.lotuscalibnet/
+  155  vim envvar
+  156  vim /etc/systemd/system/lotus-daemon.service
+  157  vim envvar
+  158  vim /etc/systemd/system/lotus-daemon.service
+  159  vim /etc/systemd/system/lotus-miner.service
+  160  netstat -ntlp |grep 25001
+  161  systemctl stop lotus-daemon
+  162  systemctl daemon-reload
+  163  systemctl stop lotus-daemon
+  164  systemctl start lotus-daemon
+  165  journalctl -xe
+  166  pwd
+  167  ls
+  168  vim /etc/systemd/system/lotus-daemon.service
+  169  vim /etc/systemd/system/lotus-miner.service
+  170  vim ~/.bashrc
+  171  systemctl daemon-reload
+  172  systemctl start lotus-daemon
+  173  systemctl status lotus-daemon
+  174  ls /mnt/ipfs/.lotuscalibnet/
+  175  ls /mnt/ipfs/.lotuscalibnet/ -lah
+  176  vim /mnt/ipfs/.lotuscalibnet/config.toml
+  177  ls /mnt/ipfs/.lotuscalibnet/
+  178  ls /mnt/ipfs/.lotuscalibnet/ -lah
+  179  lotus sync wait
+  180  time lotus wait-api
+  181  tail -f /var/log/lotus/daemon.log
+  182  time lotus wait-api
+  183  lotus sync status
+  184  lotus sync wait
+  185  lotus sync status
+  186  ls /mnt/ipfs/tmpdirforseal/
+  187  cat envvar
+  188  ls /mnt/ipfs/tmpdirforseal/
+  189  df -h
+  190  apt install sysstat
+  191  iostat -dx 5
+  192  df -h
+  193  df
+  194  df -h
+  195  df
+  196  df -h
+  197  df
+  198  df -h
+  199  iostat -dx 5
+  200  find . -type f -name paramcach
+  201  ls
+  202  cd rust-fil-proofs/
+  203  ls
+  204  find . -type f -name paramcach
+  205  find . -name param*
+  206  find . -name *cache*
+  207  ./target/debug/paramcache --help
+  208  find . -type f -name paramcach
+  209  find . -type f -name paramcach*
+  210  cp target/release/paramcache /root
+  211  /root/paramcache --sector-sizes='2048,4096,16384,32768,524288'
+  212  /root/paramcache -h
+  213  python
+  214  python3
+  215  /root/paramcache --sector-sizes='2048,4096,16384,32768,536870912'
+  216  /root/paramcache --sector-sizes='2048,536870912'
+  217  ls /mnt/ipfs/filecoin-proof-parameters -lat
+  218  ls /mnt/ipfs/filecoin-proof-parameters -lath
+  219  history
+  220  ls /mnt/ipfs/filecoin-proof-parameters -lath
+  221  ls /mnt/ipfs/proofspara/ -lhat
+  222  ls /mnt/ipfs/filecoin-proof-parameters -lath
+  223  iostat -dx 5
+  224  ls /mnt/ipfs/filecoin-proof-parameters -lath
+  225  history
+  226  df -h
+  227  free -m
+  228  ps -ef|grep swap
+  229  kill -9 2817891
+  230  df -h
+  231  free -m
+  232  iostat -dx 2
+  233  free -m
+  234  grep -nr lotus-bench /home/ipfs/lotus/
+  235  grep -nr lotus-bench /home/ipfs/lotus/Makefile
+  236  grep -nr bench /home/ipfs/lotus/Makefile |grep -v lotus-bench
+  237  vim /home/ipfs/lotus/Makefile
+  238  free -m
+  239  free
+  240  free -m
+  241  cd ../lotus/
+  242  ls
+  243  make lotus-bench
+  244  cat ~/.bashrc
+  245  cat ../envvar
+  246  vim ../install.sh
+  247  https_proxy=http://192.168.1.185:8080 make lotus-bench
+  248  ./lotus-bench --help
+  249  ./lotus-bench -h  prove
+  250  ./lotus-bench  prove  -h
+  251  1./lotus-bench  prove --no-gpu
+  252  df -h
+  253  mount
+  254  free -m
+  255  df -h
+  256  dmesg
+  257  dmesg -T
+  258  df -h
+  259  iostat -dx 1
+  260  iostat -dx 1 sdb
+  261  df -h
+  262  free -m
+  263  free
+  264  df -h
+  265  python3
+  266  free -m
+  267  ps -ef
+  268  top
+  269  free -m
+  270  df -h
+  271  python3
+  272  free -m
+  273  df -h
+  274  iostat -dx 1 sdb
+  275  iostat -dx 1
+  276  iostat -dx 2
+  277  python3
+  278  mkdir /mnt/ipfs/lbench
+  279  cd ../rust-fil-proofs/
+  280  vim bench.sh
+  281  iostat -dx 2
+  282  df -h
+  283  grep -nr 'unsupported sector size for miner' /home/ipfs/lotus/
+  284  vim /home/ipfs/lotus/chain/actors/builtin/miner/utils.go
+  285  cd ../lotus/
+  286  ./lotus-bench -h
+  287  ./lotus-bench sealing -h
+  288  grep -nr benchmark-existing-sectorbuilder .
+  289  vim ./cmd/lotus-bench/main.go
+  290  ls /mnt/ipfs/lbench/bench319265173/
+  291  ls /mnt/ipfs/lbench/
+  292  ls /mnt/ipfs/lbench/bench319265173/
+  293  ls /mnt/ipfs/lbench/
+  294  ls /mnt/ipfs/lbench/bench319265173/
+  295  git log -S 'compute epost proof'
+  296  git show 718d681f73fb6d5c0fd3b67a4f226d08802e98d6
+  297  git log -S 'PostWindowProofCold'
+  298  git show e4641fc7ed3907c4f7d8ebd66bc36daa3fe9064a
+  299  :q
+  300  ls ../rust-fil-proofs/
+  301  ls
+  302  ls -laht
+  303  ip addr
+  304  df -h
+  305  iostat -dx 1
+  306  df -h
+  307  iostat -dx 1
+  308  df -h
+  309  apt-cache search ipmi
+  310  apt-get install ipmitool
+  311  ipmitool lan print | grep "IP Address"
+  312  lscpu
+  313  lspci
+  314  ip addr
+  315  cd /root
+  316  cd /home/ipfs/
+  317  ls
+  318  dpkg -i storcli_007.1705.0000.0000_all.deb
+  319  /opt/MegaRAID/storcli/storcli64 show all
+  320  /opt/MegaRAID/storcli/storcli64 show ctrcount
+  321  /opt/MegaRAID/storcli/storcli64 show ctlcount
+  322  /opt/MegaRAID/storcli/storcli64 show ctrlcount
+  323  /opt/MegaRAID/storcli/storcli64 /c0 show all
+  324  df -h
+  325  which python3
+  326  df -h
+  327  iostat -dx 5
+  328  top
+  329  free -m
+  330  top
+  331  free -m
+  332  free
+  333  free -m
+  334  top
+  335  lsblk
+  336  systemctl status lotus-daemon
+  337  systemctl status lotus-miner
+  338  env
+  339  history |grep grep
+  340  df -h
+  341  free -m
+  342  top
+  343  ps -ef -o chan,stat,tid,pit,comm
+  344  ps -e -o chan,stat,tid,pit,comm
+  345  ps -e -o stat,tid,pit,comm
+  346  ps -eL -o stat,tid,pit,comm
+  347  ps -eL -o stat,tid,tid,comm
+  348  ps -eL -o stat,tid,tid,comm|grep D
+  349  ps -eL -o stat,tid,tid,comm|grep lotus
+  350  ps -eL -o stat,tid,tid,comm|grep D
+  351  iostat -dx 1
+  352  ps -eL -o stat,tid,tid,comm|grep D
+  353  free -m
+  354  /opt/MegaRAID/perccli/perccli /c0/dall show all
+  355  /opt/MegaRAID/perccli/perccli /c0/d1 show all
+  356  /opt/MegaRAID/perccli/perccli /c0/d0 show all
+  357  /opt/MegaRAID/perccli/perccli /c0/d2 show all
+  358  /opt/MegaRAID/perccli/perccli /c0/ show all
+  359  /opt/MegaRAID/perccli/perccli /c0/d0 show all
+  360  /opt/MegaRAID/perccli/perccli /c0/d1 show all
+  361  /opt/MegaRAID/perccli/perccli /c0/dall show all
+  362  /opt/MegaRAID/perccli/perccli /c1/dall show all
+  363  /opt/MegaRAID/perccli/perccli /c0/dall show all
+  364  /opt/MegaRAID/perccli/perccli /c0/fall show
+  365  /opt/MegaRAID/perccli/perccli /c0/vall show
+  366  /opt/MegaRAID/perccli/perccli /c0/eall/sall show
+  367  /opt/MegaRAID/perccli/perccli /c0/e32/s12 show
+  368  /opt/MegaRAID/perccli/perccli /c0/e32/s12 set jbod
+  369  /opt/MegaRAID/perccli/perccli /c0/fall show
+  370  /opt/MegaRAID/perccli/perccli /c0/fall show all
+  371  /opt/MegaRAID/perccli/perccli /c0/fall show
+  372  /opt/MegaRAID/perccli/perccli /c0/f0 show
+  373  /opt/MegaRAID/perccli/perccli /c0/f1 show
+  374  /opt/MegaRAID/perccli/perccli /c0/f2 show
+  375  /opt/MegaRAID/perccli/perccli /c0/f0 show
+  376  /opt/MegaRAID/perccli/perccli /c0/fall show
+  377  1/opt/MegaRAID/perccli/perccli /c0/fall del
+  378  df -h
+  379  free -m
+  380  1/opt/MegaRAID/perccli/perccli /c0 add vd type=raid0 drives=32:12
+  381  history
+  382  free -m
+  383  swapoff
+  384  swapoff -a
+  385  free -m
+  386  df -h
+  387  top
+  388  df -h
+  389  top
+  390  free -m
+  391  top
+  392  kill -9 2603809
+  393  top
+  394  kill -9 2603809
+  395  top
+  396  dmesg
+  397  dmesg -T
+  398  history
+  399  /opt/MegaRAID/perccli/perccli /c0/fall del
+  400  /opt/MegaRAID/perccli/perccli /c0 add vd type=raid0 drives=32:12
+  401  history >> /root/history
+  402  history |grep -v df|grep -v free |grep -v swap
+  403  history |grep -v df|grep -v free |grep -v swap|grep -v top
+  404  history |grep -v df|grep -v free |grep -v swap|egrep -v 'top|kill|dmesg|history'
+  405  history |grep -v df|grep -v free |grep -v swap|egrep -v 'top|kill|dmesg|history|tid'
+  406  history |grep -v df|grep -v free |grep -v swap|egrep -v 'top|kill|dmesg|history|tid|iostat'
+  407  history |grep -v df|grep -v free |grep -v swap|egrep -v 'top|kill|dmesg|history|tid|iostat|rm|ls'
+  408  /opt/MegaRAID/perccli/perccli /c0/dall show all
+  409  /opt/MegaRAID/perccli/perccli /c0/d2 show all
+  410  history
+  411  /opt/MegaRAID/perccli/perccli /c0/d2 show all
+  412  history
+  413  /opt/MegaRAID/perccli/perccli /c0/d2 show all
+  414  df -h
+  415  dmesg
+  416  ls
+  417  df -h
+  418  mkdir /mnt/cache
+  419  mount /dev/sdc /mnt/cache/
+  420  mount /dev/sdc3 /mnt/cache/
+  421  ls /mnt/cache/
+  422  df -h
+  423  mkdir /mnt/sdc1
+  424  mkdir /mnt/sdc2
+  425  mount /dev/sdc1 /mnt/sdc1/
+  426  mount /dev/sdc2 /mnt/sdc2
+  427  ls /mnt/sdc1/
+  428  df -h
+  429  dmesg
+  430  mount
+  431  vim /etc/fstab
+  432  df -h
+  433  btrfs subvolume list
+  434  btrfs subvolume list /dev/sdc3
+  435  btrfs subvolume list /mnt/cache
+  436  btrfs subvolume list
+  437  btrfs subvolume list -p /root
+  438  btrfs subvolume list -p /root/.SubVol
+  439  btrfs subvolume list --path /root/.SubVol
+  440  btrfs subvolume list --path /root/
+  441  df -h
+  442  umount /mnt/cache/
+  443  umount /mnt/sdc1/
+  444  ls /dev/sdc
+  445  mkswap /dev/sdc
+  446  swapon /dev/sdc
+  447  df -h
+  448  free -m
+  449  df -h
+  450  free -m
+  451  iostat -dx 1
+  452  df -h
+  453  free -m
+  454  top
+  455  iostat -dx 1
+  456  top
+  457  ps -eL -o stat,tid,tid,comm|grep D
+  458  ps -eL -o stat,tid,tid,comm,whan|grep D
+  459  ps -eL -o stat,tid,tid,comm,chan|grep D
+  460  ps -eL -o stat,tid,tid,comm,whcah|grep D
+  461  ps -eL -o stat,tid,tid,comm|grep D
+  462  man ps
+  463  ps -eL -o stat,tid,tid,comm,wchan|grep D
+  464  dmesg
+  465  dmesg -c
+  466  dmesg
+  467  top
+  468  free -m
+  469  iostat -dx 5
+  470  top
+  471  ps -eL -o stat,tid,tid,comm,wchan|grep D
+  472  top
+  473  free -m
+  474  df -h
+  475  df
+  476  free -m
+  477  free
+  478  top
+  479  free
+  480  top
+  481  free
+  482  uname -a
+  483  free
+  484  free -m
+  485  top
+  486  iostat -dx 5
+  487  free -m
+  488  iostat -dx 5
+  489  top
+  490  iostat -dx 1
+  491  iostat -dx 2
+  492  top
+  493  df -h
+  494  free -m
+  495  top
+  496  free -m
+  497  top
+  498  free -m
+  499  top
+  500  iostat -dx 1
+  501  top
+  502  df -h
+  503  free -m
+  504  df -h
+  505  df
+  506  top
+  507  free -m
+  508  top
+  509  free -m
+  510  top
+  511  free -m
+  512  df -h
+  513  free -m
+  514  top
+  515  free -m
+  516  top
+  517  free -m
+  518  top
+  519  free -m
+  520  top
+  521  ip addr
+  522  free -m
+  523  ip addr
+  524  iostat  -dx 1
+  525  history
+  526  ls
+  527  vim 00-installer-config.yaml
+  528  ls
+  529  history
+  530  ls
+  531  rm -rf /mnt/ipfs/swapfile
+  532  du -sh /mnt/ipfs/proofspaabackup/
+  533  du -sh /mnt/ipfs/proofspaa
+  534  du -sh /mnt/ipfs/proofspara/
+  535  rsync -av /mnt/ipfs/proofspara 172.18.10.106:/mnt/sdb/filecoin
+  536  history |grep 00-installer-config.yaml
+  537  history
+  538  rsync-av /root/history 172.18.10.106:/mnt/sdb/filecoin
+  539  rsync -av /root/history 172.18.10.106:/mnt/sdb/filecoin
+  540  ls
+  541  rsync -av envvar 172.18.10.106:/mnt/sdb/filecoin
+  542  rsync -av install* 172.18.10.106:/mnt/sdb/filecoin
+  543  ssh-copy-id 172.18.10.106
+  544  ssh-keygen
+  545  ssh-copy-id 172.18.10.106
+  546  rsync -av install* 172.18.10.106:/mnt/sdb/filecoin
+  547  ls
+  548  cd lotus/
+  549  ls
+  550  ls -laht
+  551  git status
+  552  ls
+  553  git branch -a
+  554  git status
+  555  ls
+  556  history
+  557  ls -laht
+  558  cd ../rust-fil-proofs/
+  559  git status
+  560  cd ..
+  561  rsync -av rust-fil-proofs/bench.sh 172.18.10.106:/mnt/sdb/filecoin/rust-fil-proofs/
+  562  rsync -av rust-fil-proofs/getpara.sh 172.18.10.106:/mnt/sdb/filecoin/rust-fil-proofs/
+  563  rsync -av rust-fil-proofs/window-post-2KiB-dir 172.18.10.106:/mnt/sdb/filecoin/rust-fil-proofs/
+  564  ls
+  565  ls /root/
+  566  rsync -av /root/history 172.18.10.106:/mnt/sdb/filecoin/rust-fil-proofs/
+  567  cat ~/.bashrc
+  568  ls /mnt/ipfs/
+  569  env
+  570  cat /etc/systemd/system/lotus-daemon.service
+  571  rsync -av /etc/systemd/system/lotus-daemon.service 172.18.10.106:/mnt/sdb/filecoin/
+  572  rsync -av /etc/systemd/system/lotus-miner.service 172.18.10.106:/mnt/sdb/filecoin/
+  573  ls
+  574  iostat -dx 1
+  575  git status
+  576  ls
+  577  cd rust-fil-proofs/
+  578  git status
+  579  git log
+  580  git status
+  581  ls
+  582  ls -lhat
+  583  git stats
+  584  df -h
+  585  cat ~/.gitconfig
+  586  lspci
+  587  dmesg|grep -i idrc
+  588  dmesg|grep -i drc
+  589  dmesg
+  590  ip addr
+  591  lspci
+  592  df -h
+  593  top
+  594  iostat -dx 1
+  595  free -m
+  596  cat /etc/fstab
+  597  top
+  598  ip addr
+  599  df -h
+  600  ps -ef|grep lotus
+  601  kill -9 3590318
+  602  ps -ef|grep lotus
+  603  systemctl statu daemon
+  604  systemctl statu lotus-daemon
+  605  systemctl status lotus-daemon
+  606  cat /etc/systemd/system/lotus-daemon.service
+  607  cat /etc/systemd/system/lotus-miner.service
+  608  cd ..
+  609  history
+
+root@ipfs:/home/ipfs/lotus# history
+    1  smartctl -i /dev/sda
+    2  lsblk
+    3  vim install
+    4  vim install.sh
+    5  cat /home/ipfs/.bashrc
+    6  vim ~/.bashrc
+    7  exit
+    8  vim ~/.bashrc
+    9  exit
+   10  ntpdate cn.pool.ntp.org
+   11  systemctl status ntp
+   12  date
+   13  free -h
+   14  ctdb ip
+   15  vim install.sh
+   16  sh install
+   17  date
+   18  go --version
+   19  ls -lah install*
+   20  vim install
+   21  vim install.sh
+   22  1sh install.sh
+   23  timedatectl set-timezone Asia/Shanghai
+   24  date
+   25  sh install.sh
+   26  lotus sync status
+   27  df -h
+   28  lotus sync status
+   29  lotus sync wait
+   30  lotus sync status
+   31  lotus sync wait
+   32  df -h
+   33  cat /etc/fstab
+   34  lotus sync wait
+   35  ls
+   36  ls /mnt/ipfs/.lotuscalibnet/
+   37  ls /mnt/ipfs/.lotusminercalibnet/
+   38  ls /mnt/ipfs/.lotuscalibnet/
+   39  df -h
+   40  top
+   41  ls
+   42  ls -lah
+   43  lotus sync status
+   44  lotus sync wait
+   45  ls /mnt/ipfs/.lotuscalibnet/
+   46  lotus sync wait
+   47  lotus sync status
+   48  systemctl status lotus-daemon
+   49  lotus sync status
+   50  systemctl status lotus-daemon
+   51  lotus sync wait
+   52  systemctl status lotus-daemon
+   53  lotus sync wait
+   54  systemctl status lotus-daemon
+   55  free -m
+   56  lotus sync wait
+   57  lotus wait-api
+   58  time lotus wait-api
+   59  lotus sync wait
+   60  systemctl status lotus-daemon
+   61  cat /var/log/lotus/daemon.log
+   62  tail -f  /var/log/lotus/daemon.log
+   63  systemctl status lotus-daemon
+   64  time lotus wait-api
+   65  lotus sync wait
+   66  systemctl status lotus-daemon
+   67  tail -f  /var/log/lotus/daemon.log
+   68  cat install.sh
+   69  tail -f  /var/log/lotus/daemon.log
+   70  df -h
+   71  ls /var/tmp/filecoin-proof-parameters/
+   72  lotus sync wait
+   73  vim install.sh
+   74  vim ~/.bashrc
+   75  vim install.sh
+   76  vim ~/.bashrc
+   77  mkdir /mnt/ipfs/proofspara
+   78  mkdir /mnt/ipfs/proofspare
+   79  vim ~/.bashrc
+   80  mkdir /mnt/ipfs/tmpdirforseal
+   81  vim ~/.bashrc
+   82  source ~/.bashrc
+   83  git stauts
+   84  vim ~/.bashrc
+   85  systemctl satus lotus-daemon
+   86  systemdctl satus lotus-daemon
+   87  systemctl status lotus-daemon
+   88  systemctl restart lotus-daemon
+   89  systemctl status lotus-daemon
+   90  lotus sync wait
+   91  tail -f /var/log/lotus/daemon.log
+   92  systemctl stop lotus-daemon
+   93  vim ~/.lotus/
+   94  du -sh ~/.lotus/
+   95  rm -rf ~/.lotus/
+   96  ls
+   97  systemctl start lotus-daemon
+   98  systemctl status lotus-daemon
+   99  history
+  100  cat ~/.bashrc
+  101  ls /mnt/ipfs/.lotuscalibnet
+  102  ls /mnt/ipfs/.lotuscalibnet/
+  103  du -sh ~/.lotus/
+  104  ls
+  105  systemctl stop lotus-daemon
+  106  ls
+  107  vim install.sh
+  108  source ~/.bashrc
+  109  sh install.sh
+  110  vim install.sh
+  111  sh install.sh
+  112  time lotus wait-api
+  113  ls ~/.lotus/
+  114  ls /mnt/ipfs/.lotuscalibnet/
+  115  vim install.sh
+  116  cat ~/.bashrc
+  117  systemctl status lotus-daemon
+  118  vim /etc/systemd/system/lotus-daemon.service
+  119  cat ~/.bashrc
+  120  time lotus wait-api
+  121  clear
+  122  ls
+  123  dstat -sam
+  124  top
+  125  free -h
+  126  apt install -y dstat
+  127  dstat -asm
+  128  clear
+  129  ls
+  130  free -h
+  131  lsblk
+  132  users
+  133  ls
+  134  git clone https://github.com/filecoin-project/rust-fil-proofs.git
+  135  cat /home/ipfs/.gitconfig
+  136  cp /home/ipfs/.gitconfig ~/
+  137  git clone https://github.com/filecoin-project/rust-fil-proofs.git
+  138  cd rust-fil-proofs/
+  139  vim ~/.bashrc
+  140  source /home/ipfs/.cargo/env
+  141  rust
+  142  cat /home/ipfs/.cargo/env
+  143  cat /home/ipfs/.bashrc
+  144  cat /home/ipfs/.cargo/env
+  145  vim ~/.bashrc
+  146  source ~/.bashrc
+  147  apt install ocl-icd-opencl-dev
+  148  ls
+  149  tail -f /var/log/lotus/daemon.log
+  150  vim ../install.sh
+  151  cat ~/.bashrc
+  152  vim ../install.sh
+  153  lotus sync wait
+  154  lotus sync status
+  155  ls
+  156  ls /mnt/ipfs/.lotuscalibnet/
+  157  ls /mnt/ipfs/.lotuscalibnet/ -lah
+  158  ls ~/.lotu
+  159  tail -f /var/log/lotus/daemon.log
+  160  ls /var/log/lotus/daemon.log
+  161  tail -f  /var/log/lotus/daemon.log
+  162  lotus sync status
+  163  ls
+  164  dpkg -h
+  165  dpkg --help
+  166  dpkg --list|grep hwloc
+  167  ls
+  168  vim Cargo.toml
+  169  vim filecoin-proofs/Cargo.toml
+  170  vim filecoin-hashers/Cargo.toml
+  171  vim fil-proofs-param/Cargo.toml
+  172  vim /home/ipfs/lotus/Makefile
+  173  vim /home/
+  174  vim /home/ipfs/lotus/.gitmodules
+  175  vim /home/ipfs/lotus/scripts/build-bundle.sh
+  176  grep -nr rust-fil-proofs /home/ipfs/lotus/
+  177  cargo list features
+  178  ls
+  179  vim fil-proofs-param/Cargo.toml
+  180  vim fil-proofs-tooling/Cargo.toml
+  181  vim filecoin-hashers/Cargo.toml
+  182  vim filecoin-proofs/Cargo.toml
+  183  vim fr32/Cargo.toml
+  184  vim sha2raw/Cargo.toml
+  185  vim storage-proofs-core/Cargo.toml
+  186  vim storage-proofs-porep/Cargo.toml
+  187  vim storage-proofs-post/Cargo.toml
+  188  git log
+  189  ls
+  190  git branch -a
+  191  grep -nr gpu2
+  192  grep -nr gpu2 .
+  193  vim CHANGELOG.md
+  194  find . -name parameters.json
+  195  vim ./filecoin-proofs/parameters.json
+  196  vim ./parameters.json
+  197  vim ./storage-proofs-core/parameters.json
+  198  vim ./fil-proofs-param/parameters.json
+  199  cat rust-toolchain
+  200  1export FIL_PROOFS_PARAMETER_CACHE=
+  201  ls
+  202  mkdir /mnt/ipfs/filecoin-proof-parameters
+  203  1export FIL_PROOFS_PARAMETER_CACHE=/mnt/ipfs/filecoin-proof-parameters
+  204  echo $FIL_PROOFS_PARAMETER_CACHE
+  205  cat ~/.bashrc
+  206  cat /etc/systemd/system/lotus-miner.service
+  207  cat /home/ipfs/envvar
+  208  export FIL_PROOFS_PARAMETER_CACHE=/mnt/ipfs/filecoin-proof-parameters
+  209  echo $FIL_PROOFS_PARAMETER_CACHE
+  210  export RUST_LOG=info
+  211  1cargo +
+  212  cat rust-toolchain
+  213  cargo test --all --verbose --no-default-features --features pairing
+  214  ls
+  215  du /mnt/ipfs/filecoin-proof-parameters/
+  216  du -sh /mnt/ipfs/filecoin-proof-parameters/
+  217  cargo run --release --bin benchy -- window-post --size 2
+  218  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  219  RUST_BACKTRACE=1 cargo run --release --bin benchy -- merkleproofs --size 2
+  220  RUST_BACKTRACE=1 cargo run --release --bin benchy -- merkleproofs --size 2kiB
+  221  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  222  RUST_BACKTRACE=1 cargo cargo run --release --bin benchy -- winning-post --size 2kiB
+  223  RUST_BACKTRACE=1 cargo run --release --bin benchy -- winning-post --size 2kiB
+  224  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2KiB --cache window-post-2KiB-dir --preserve-cache
+  225  git status
+  226  vim getpara.sh
+  227  env
+  228  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST|
+  229  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  230  unset FIL_PROOFS_PARENT_CACHE
+  231  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  232  export FIL_PROOFS_PARENT_CACHE=/mnt/ipfs/filecoin-proof-parametersparecache
+  233  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  234  mkdir /mnt/ipfs/filecoin-proof-parametersparecache
+  235  vim getpara.sh
+  236  ls /mnt/ipfs/filecoin-proof-parameters
+  237  sh getpara.sh
+  238  rm -rf /mnt/ipfs/filecoin-proof-parameters/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-0-0-*
+  239  vim getpara.sh
+  240  apt install axel
+  241  sh getpara.sh
+  242  vim getpara.sh
+  243  sh getpara.sh
+  244  vim getpara.sh
+  245  sh getpara.sh
+  246  vim getpara.sh
+  247  rm -rf /mnt/ipfs/filecoin-proof-parameters/v28-*
+  248  sh getpara.sh
+  249  history
+  250  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  251  1RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  252  vim getpara.sh
+  253  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 32GiB
+  254  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 512MiB
+  255  ls
+  256  lotus -h
+  257  lotus state -h
+  258  lotus sync --help
+  259  lotus n
+  260  vim srs-inner-product.json
+  261  cargo build --release --workspace
+  262  ls
+  263  ls -alht
+  264  cargo run --release --bin paramfetch -- -a -j srs-inner-product.json
+  265  https_proxy=http://192.168.1.185:8080 cargo run --release --bin paramfetch -- -a -j srs-inner-product.json
+  266  ls -laht /mnt/ipfs/proofspara/
+  267  ls -lat /mnt/ipfs/proofspara/
+  268  /root/paramcache --sector-sizes='2048,536870912'
+  269  https_proxy=http://192.168.1.185:8080 cargo run --release --bin paramfetch -- -a -j srs-inner-product.json
+  270  history
+  271  1RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  272  export BELLMAN_NO_GPU=1
+  273  RUST_BACKTRACE=1 cargo run --release --bin benchy -- help
+  274  RUST_BACKTRACE=1 cargo run --release --bin benchy -- windows-post --help
+  275  RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --help
+  276  grep -nri BELLMAN_NO_GPU .
+  277  history
+  278  1RUST_BACKTRACE=1 cargo run --release --bin benchy -- window-post --size 2kiB
+  279  grep -nr FFI_BUILD_FROM_SOURCE .
+  280  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --bin benchy -- window-post --size 2kiB
+  281  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --bin benchy -- window-post --size 512MiB
+  282  history
+  283  vim bench.sh
+  284  python3
+  285  vim bench.sh
+  286  cargo run --bin settings
+  287  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --verbose --bin settings
+  288  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --verbose --all --bin settings
+  289  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --all --no-default-features --features pairing --verbose  --bin settings
+  290  RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 RUST_BACKTRACE=1 cargo run --release --no-default-features --features pairing --verbose  --bin settings
+  291  ls
+  292  vim rust-fil-proofs.config.toml.sample
+  293  grep -nr use_multicore_sdr .
+  294  grep -nr use_multicore_sdr storage-proofs-core/
+  295  vim storage-proofs-core/src/settings.rs
+  296  export FIL_PROOFS_USE_MULTICORE_SDR=true
+  297  vim bench.sh
+  298  history |grep export
+  299  vim bench.sh
+  300  cat /home/ipfs/envvar
+  301  vim bench.sh
+  302  cat rust-fil-proofs.config.toml.sample
+  303  vim bench.sh
+  304  sh bench.sh
+  305  dmesg
+  306  free -h
+  307  grep -nr FIL_PROOFS_PARENT_CACHE_SIZE .
+  308  grep -nir FIL_PROOFS_PARENT_CACHE_SIZE .
+  309  grep -nir PARENT_CACHE_SIZE .
+  310  grep -nir CACHE_SIZE .
+  311  vim rust-fil-proofs.config.toml.sample
+  312  vim bench.sh
+  313  sh bench.sh
+  314  swapoff --help
+  315  vim bench.sh
+  316  df -h
+  317  free -m
+  318  vim bench.sh
+  319  swapoff --help
+  320  vim bench.sh
+  321  cat /etc/fstab
+  322  vim /etc/fstab
+  323  vim bench.sh
+  324  sh bench.sh
+  325  vim bench.sh
+  326  sh bench.sh
+  327  df -h
+  328  free -m
+  329  swapoff -h
+  330  swapoff -h
+  331  swapoff -a
+  332  vim bench.sh
+  333  ls /mnt/ipfs/swapfile -lah
+  334  sh bench.sh
+  335  vim bench.sh
+  336  df -h
+  337  free -m
+  338  swapoff -a
+  339  vim bench.sh
+  340  time sh bench.sh
+  341  vim bench.sh
+  342  time sh bench.sh
+  343  vim bench.sh
+  344  time sh bench.sh
+  345  vim bench.sh
+  346  /root/paramcache -g
+  347  /root/paramcache -h
+  348  time sh bench.sh
+  349  mkdir /mnt/ipfs/filecoin-proof-parameterstmpdirforseal
+  350  time sh bench.sh
+  351  vim bench.sh
+  352  time sh bench.sh
+  353  history >> /root/history
+  354  exit
+  355  cd rust-fil-proofs/
+  356  env
+  357  cd ../lotus/
+  358  ls
+  359  ./lotus-bench -h
+  360  ./lotus-bench  prove  -h
+  361  ./lotus-bench  prove --no-gpu
+  362  ./lotus-bench  --version
+  363  git log -- Makefile
+  364  git log -S lotus-bench
+  365  git show 718d681f73fb6d5c0fd3b67a4f226d08802e98d6
+  366  git log -S lotus-bench -- Makefile
+  367  git show 2cbe14b234d365b7c8d30f109d0acd1a4f065dc3
+  368  git log -S lotus-bench: -- Makefile
+  369  git log -S 'lotus-bench:' -- Makefile
+  370  git show 5b9baba9004329f9d24345ccfd5afb946bfc8fa3
+  371  vim Makefile
+  372  ./lotus-bench  -h
+  373  ./lotus-bench  sealing -h
+  374  ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 1073741824 --json-out 2>&1 |tee 1glog
+  375  ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 1GiB --json-out 2>&1 |tee 1glog
+  376  vim /home/ipfs/lotus/cmd/lotus-bench/main.go
+  377  ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 512MiB --json-out 2>&1 |tee 1glog
+  378  history |grep grep
+  379  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  380  rm -rf /mnt/ipfs/proofspara/*
+  381  rm -rf /mnt/ipfs/proofspare/*
+  382  ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 512MiB --json-out 2>&1 |tee 1glog
+  383  ls
+  384  vim ../rust-fil-proofs/bench.sh
+  385  find . -name paramfetch
+  386  find . -name paramfetch*
+  387  find . -name *paramfetch*
+  388  find . -name paramfetch
+  389  1https_proxy=http://192.168.1.185:8080 lotus fetch-params 2048
+  390  lotus -h
+  391  1https_proxy=http://192.168.1.185:8080 lotus fetch-params -h
+  392  lotus fetch-params -h
+  393  https_proxy=http://192.168.1.185:8080 lotus fetch-params 512MiB
+  394  rm -rf /mnt/ipfs/proofspar/*
+  395  https_proxy=http://192.168.1.185:8080 lotus fetch-params 512MiB
+  396  ls /mnt/ipfs/proofspara
+  397* rm -rf  /mnt/ipfs/proofspara/
+  398  https_proxy=http://192.168.1.185:8080 lotus fetch-params 512MiB
+  399  ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 512MiB --json-out 2>&1 |tee 1glog
+  400  https_proxy=http://192.168.1.185:8080 lotus fetch-params 1GiB
+  401* ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size GiB --json-out 2>&1 |tee 1glog
+  402  https_proxy=http://192.168.1.185:8080 lotus fetch-params 32GiB
+  403  https_proxy=http://192.168.1.185:1088 lotus fetch-params 32GiB
+  404  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  405  rm -rf /mnt/ipfs/proofspara/v28-stacked-proof-of-replication-merkletree-poseidon_hasher-8-8-0-sha256_hasher-82a357d2f2ca81dc61bb45f4a762807aedee1b0a53fd6c4e77b46a01bfef7820.params
+  406  rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-559e581f022bb4e4ec6e719e563bf0e026ad6de42e56c18714a2c692b1b88d7e.params
+  407  rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-0377ded656c6f524f1618760bffe4e0a1c51d5a70c4509eedae8a27555733edc.params
+  408  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  409  rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-0377ded656c6f524f1618760bffe4e0a1c51d5a70c4509eedae8a27555733edc.params
+  410  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  411  rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-0377ded656c6f524f1618760bffe4e0a1c51d5a70c4509eedae8a27555733edc.params
+  412* rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-559e581f022bb4e4ec6e719e563bf0e026ad6de42e56c18714a2c692b1b88d7e.param
+  413  rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-559e581f022bb4e4ec6e719e563bf0e026ad6de42e56c18714a2c692b1b88d7e.params /mnt/ipfs/proofspara/v28-stacked-proof-of-replication-merkletree-poseidon_hasher-8-8-0-sha256_hasher-82a357d2f2ca81dc61bb45f4a762807aedee1b0a53fd6c4e77b46a01bfef7820.params
+  414  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  415  rm -rf /mnt/ipfs/proofspara/v28-stacked-proof-of-replication-merkletree-poseidon_hasher-8-8-0-sha256_hasher-82a357d2f2ca81dc61bb45f4a762807aedee1b0a53fd6c4e77b46a01bfef7820.params
+  416  rm -rf /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-0377ded656c6f524f1618760bffe4e0a1c51d5a70c4509eedae8a27555733edc.params /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-0377ded656c6f524f1618760bffe4e0a1c51d5a70c4509eedae8a27555733edc.params /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-559e581f022bb4e4ec6e719e563bf0e026ad6de42e56c18714a2c692b1b88d7e.params /mnt/ipfs/proofspara/v28-proof-of-spacetime-fallback-merkletree-poseidon_hasher-8-8-0-559e581f022bb4e4ec6e719e563bf0e026ad6de42e56c18714a2c692b1b88d7e.params
+  417  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  418  rm -rf /mnt/ipfs/proofspara/*
+  419  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  420  rm -rf /mnt/ipfs/proofspara/*
+  421  ls /mnt/ipfs/proofspar
+  422  ls /mnt/ipfs/proofspara/
+  423  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  424  history
+  425  https_proxy=http://192.168.1.185:8080 IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  426  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  427  lotus fetch-params -h
+  428  IPFS_GATEWAY="https://dweb.link" lotus fetch-params 32GiB
+  429  IPFS_GATEWAY="https://dweb.link/" lotus fetch-params 32GiB
+  430  https_proxy=http://192.168.1.185:8080 IPFS_GATEWAY=IPFS_GATEWAY=https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/ lotus fetch-params 32GiB
+  431  https_proxy=http://192.168.1.185:8080 IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  432  IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/" lotus fetch-params 32GiB
+  433  IPFS_GATEWAY="https://dweb.link/" lotus fetch-params 32GiB
+  434  history
+  435  https_proxy='http://192.168.1.185:8080' IPFS_GATEWAY="https://dweb.link/" lotus fetch-params 32GiB
+  436  rm -rf /mnt/ipfs/proofspara/*
+  437  https_proxy='socks5://192.168.1.185:1088' IPFS_GATEWAY="https://dweb.link/" lotus fetch-params 32GiB
+  438  https_proxy='socks5://192.168.1.185:1088'  lotus fetch-params 32GiB
+  439  https_proxy='socks5://192.168.1.185:1088' IPFS_GATEWAY="https://dweb.link/" lotus fetch-params 32GiB
+  440  https_proxy='socks5://192.168.1.185:1088'  lotus fetch-params 32GiB
+  441  https_proxy='socks5://192.168.1.185:1080'  lotus fetch-params 32GiB
+  442  https_proxy='http://192.168.1.185:8080'  lotus fetch-params 32GiB
+  443  history
+  444  11./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size GiB --json-out 2>&1 |tee 1glog
+  445  df -h
+  446  ls /mnt/ipfs/lbench/
+  447  ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 32GiB --json-out 2>&1 |tee 2glog
+  448  df -h
+  449  env
+  450  history |grep grep
+  451  env|egrep  -i 'fil_|LOTUS_|BELLMAN|RUST'
+  452  1rsync -va /mnt/ipfs/proofspara /mnt/ipfs/proofspaabackup
+  453  mkdir /mnt/ipfs/proofspaabackup
+  454  rsync -va /mnt/ipfs/proofspara/ /mnt/ipfs/proofspaabackup
+  455  git status
+  456  history
+  457  history >> /root/history
+  458  history |grep -v rm|grep -v history
+  459  history |grep -v rm|grep -v history|grep -v vim|grep -v ls
+  460  history |grep -v rm|grep -v history|grep -v vim|grep -v ls|grep swapoff
+  461  history |grep -v rm|grep -v history|grep -v vim|grep -v ls|grep -v swapoff
+  462  history |grep -v rm|grep -v history|grep -v vim|grep -v ls|grep -v swapoff|grep -v grep
+  463  env
+  464  mkdir /mnt/cache/proofspara
+  465  rm -rf /mnt/cache/proofspara/
+  466  df -h
+  467  free -m
+  468  history
+  469  time ./lotus-bench  sealing --no-gpu --storage-dir /mnt/ipfs/lbench/ --sector-size 32GiB --json-out 2>&1 |tee 2glog
+  470  history
+
+

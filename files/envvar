@@ -1,0 +1,9 @@
+LOTUS_PATH=/mnt/ipfs/.lotuscalibnet
+LOTUS_MINER_PATH=/mnt/ipfs/.lotusminercalibnet
+BELLMAN_CPU_UTILIZATION=1
+FIL_PROOFS_PARAMETER_CACHE=/mnt/ipfs/proofspara
+FIL_PROOFS_PARENT_CACHE=/mnt/ipfs/proofspare
+TMPDIR=/mnt/ipfs/tmpdirforseal
+GOLOG_FILE="/var/log/lotus/daemon.log"
+GOLOG_LOG_FMT="json"
+
