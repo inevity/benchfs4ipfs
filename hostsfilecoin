@@ -2,7 +2,7 @@
 #gateway=['192.168.1.1','192.168.2.1','192.168.3.1']
 gateway=['','','']
 # now support diff interface?
-interface={'pri_dev':'p2p1', 'manage_dev': 'em1', 'pub_dev': 'p2p1'}
+interface={'pri_dev':'p2p1', 'manage_dev': 'em1', 'pub_dev': 'p2p2'}
 # username default root see groups/all/vars
 vault_machine_pass='123456'
 
