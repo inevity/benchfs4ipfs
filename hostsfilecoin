@@ -37,6 +37,7 @@ ipfs111.tc.com ips=['10.10.10.18/24','172.16.10.18/24','172.18.10.18/24'] manage
 
 [cluster_clients]
 #ans4.tc.com should_mount_from=ans1.tc.com ips=['192.168.1.18/16','192.168.2.18/16','192.168.3.18/16'] manage_ip="192.168.2.18" 
+## shuold mount from fiber
 ipfs112.tc.com should_mount_from=ipfs112.tc.com
 ipfs111.tc.com should_mount_from=ipfs111.tc.com
 #ipfs110.tc.com
